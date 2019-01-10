@@ -9,28 +9,31 @@
 
 <body>
    
+   <!-- Cntainer -->
    <div class="container">
+      <!-- Form One -->
       <div class="formOne">
        <form action="doSomething.php" class="firstForm">
           <fieldset>
-            <legend>Jusu Informacija</legend>
+            <legend>Jūsų Informacija</legend>
              <div class="Vardas">
               <label for="name" id="name">Vardas:</label>
                 <input type="text" name="firstname" value="Vardas"><br>
              </div> 
              <div class="Pavarde">   
-              <label for="lastName" id="lastname">Pavarde:</label>
+              <label for="lastName" id="lastname">Pavardė:</label>
                 <input type="text" name="lastname" value="Pavarde"><br>
              </div>    
           </fieldset>
         </form>
        </div>    
         
+       <!-- Form Two -->    
        <div class="formTwo">    
         <form action="doSomethingElse.php" class="secondForm">
           <fieldset>
             <legend>Klausimai</legend>
-              <label for="name" id="name">Kaip suzinojote apie mus?
+              <label for="name" id="name">Kaip sužinojote apie mus?
               </label>
                 <select name="searchEngines" id="searchEngines">
                 <option value="Google">Google</option>
@@ -38,8 +41,9 @@
                 <option>Yahoo</option>
             </select><br><br>
             
+            <!-- RadioButtons -->
             <div class="radioButtons">
-                <label for="apsilankymai" class="apsilankymai">Ar apsilankisyte vel?</label><br>
+                <label for="apsilankymai" class="apsilankymai">Ar apsilankisyte vėl?</label><br>
 
                 <label>Taip</label>
                   <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Taip" />
@@ -47,17 +51,19 @@
                 <label>Ne</label>
                   <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Ne" />
 
-                <label>Galbut</label>
+                <label>Galbūt</label>
                   <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Galbut" /><br><br>
             </div>  
             
+            <!-- Textarea -->
             <div class="textarea">
-                <label for="textarea">Ka manote apie kursa?</label><br>
+                <label for="textarea">Ką manote apie kursą?</label><br>
                 <textarea placeholder="Rasykite viska ka galvojate" rows="7" cols="70"></textarea>
             </div><br>
             
+            <!-- Options -->
             <div class="options">
-                <label for="options" class="newsletter">Pazymekite programavym/zymejimo kalbas su kurioms esate susipazine:</label><br><br>
+                <label for="options" class="newsletter">Pažymėkitė programavymo/žymėjimo kalbas su kurioms esate susipažinę:</label><br><br>
                 
                 <div class="firstRow">
                     <input type="checkbox" name="" value="" />C#
@@ -80,15 +86,16 @@
                 </div>       
             </div><br>
             
+            <!-- Submit -->
             <div class="submit">
-                <input type="button" value="Submit">
+                <input type="button" value="Siūsti">
             </div>
              
           </fieldset>
         </form>
        </div>
-   
    </div>
+   <!-- End Container -->
     
 </body>
 </html>
