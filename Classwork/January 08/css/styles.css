@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+}
+
+#contact_form {
+    background-color: #444;
+    color: #fff;
+    padding: 3rem;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    background-color: #444;
+}
+
+#user_name,
+#user_email,
+#user_address,
+#password {height: 30px;}
+
+#user_name:hover,
+#user_email:hover,
+#user_address:hover,
+#password:hover {
+    background-color: #fff;
+    transition: 2s;
+}
+
+input [type=radio] {
+    width: 20px;
+    height: 0;
+}
+
+label {
+    margin-right: 20px;
+    font-family: serif; 
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+select {
+    position: relative;
+    font-family: Arial;
+    width: 60%;
+    background-color: #333;
+    color: aliceblue;
+    border: 2px solid #fff;
+
+}
+
+.checkboxes input,
+.radio input {
+    width: 20px; 
+}
+
+.checkboxes,
+.radio {
+    margin-top: 30px;
+    background-color: #333;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+textarea {
+    margin-top: 30px;
+    width: 98%;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.submit {
+    width: 160px;
+    padding: 20px 0;
+    margin-top: 2rem;
+    border: none;
+    border: 3px solid #333;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: #444;
+    color: aliceblue;     
+}
+
+.submit:hover {
+    background-color: aliceblue;
+    color: #333;
+    transition: 2s;
+}

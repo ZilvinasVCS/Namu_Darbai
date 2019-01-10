@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <title>Forma</title>
+</head>
+
+<body>
+   
+   <div class="container">
+      <div class="formOne">
+       <form action="doSomething.php" class="firstForm">
+          <fieldset>
+            <legend>Jusu Informacija</legend>
+             <div class="Vardas">
+              <label for="name" id="name">Vardas:</label>
+                <input type="text" name="firstname" value="Vardas"><br>
+             </div> 
+             <div class="Pavarde">   
+              <label for="lastName" id="lastname">Pavarde:</label>
+                <input type="text" name="lastname" value="Pavarde"><br>
+             </div>    
+          </fieldset>
+        </form>
+       </div>    
+        
+       <div class="formTwo">    
+        <form action="doSomethingElse.php" class="secondForm">
+          <fieldset>
+            <legend>Klausimai</legend>
+              <label for="name" id="name">Kaip suzinojote apie mus?
+              </label>
+                <select name="searchEngines" id="searchEngines">
+                <option value="Google">Google</option>
+                <option>Bing</option>
+                <option>Yahoo</option>
+            </select><br><br>
+            
+            <div class="radioButtons">
+                <label for="apsilankymai" class="apsilankymai">Ar apsilankisyte vel?</label><br>
+
+                <label>Taip</label>
+                  <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Taip" />
+
+                <label>Ne</label>
+                  <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Ne" />
+
+                <label>Galbut</label>
+                  <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Galbut" /><br><br>
+            </div>  
+            
+            <div class="textarea">
+                <label for="textarea">Ka manote apie kursa?</label><br>
+                <textarea placeholder="Rasykite viska ka galvojate" rows="7" cols="70"></textarea>
+            </div><br>
+            
+            <div class="options">
+                <label for="options" class="newsletter">Pazymekite programavym/zymejimo kalbas su kurioms esate susipazine:</label><br><br>
+                
+                <div class="firstRow">
+                    <input type="checkbox" name="" value="" />C#
+                    <input type="checkbox" name="" value="" />JAVA
+                    <input type="checkbox" name="" value="" />PHP<br>
+                </div>
+                
+                <div class="secondRow">
+                    <input type="checkbox" name="" value="">HTML
+
+                    <input type="checkbox" name="" value="">CSS
+
+                    <input type="checkbox" name="" value="">JavaScript
+                </div>
+                
+                <div class="thirdRow">
+                    <input type="checkbox" name="" value="">Python
+
+                    <input type="checkbox" name="" value="">Ruby
+                </div>       
+            </div><br>
+            
+            <div class="submit">
+                <input type="button" value="Submit">
+            </div>
+             
+          </fieldset>
+        </form>
+       </div>
+   
+   </div>
+    
+</body>
+</html>
