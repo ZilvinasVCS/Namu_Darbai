@@ -3,4 +3,4 @@ label#name { margin-right: 8px; }
 .options {width: 100%; }
 .firstRow input:nth-child(2){ margin-left: 30px;}
 .secondRow input:nth-child(3) {margin-left: 12px;}
-.submit { margin-top: 20px; }
+#submit { margin-top: 20px; }
