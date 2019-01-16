@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="lt">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Coiny&amp;subset=latin-ext" rel="stylesheet">
+    <title>CALENDAR</title>
     <style>
         body {
             background-color: #eaebed;
+            font-family: 'Coiny', cursive;
         }
         .month {
             text-transform: uppercase;
@@ -31,10 +33,14 @@
        
         .workdays {
             height: 20px;
-            font-size: 12px;
+            font-size: 10px;
             text-align: center;
             color: #fff;
             text-transform: uppercase;
+        }
+        
+        .date {
+            padding: 3px;
         }
         
         .box:nth-child(7n-1) {
@@ -58,7 +64,12 @@
         }
         
         .appointments {
-            padding-top: 10px;
+            margin-top: 10px;
+            background-color: #333;
+        }
+        
+        .weekends {
+            background-color: cadetblue;
         }
          
     </style>    
@@ -96,6 +107,7 @@
         </div>
         <div class="box">
             <span class="date">7</span>
+            <p class="appointments weekends">Learn to Code</p>
         </div>
         <div class="box">
             <span class="date">8</span>
@@ -119,6 +131,7 @@
         </div>
         <div class="box">
             <span class="date">14</span>
+            <p class="appointments weekends">Learn to Code</p>
         </div>
         <div class="box">
             <span class="date">15</span>
