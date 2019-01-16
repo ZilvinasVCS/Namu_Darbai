@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <title>Forma</title>
+</head>
+
+<body>
+   
+   <!-- Container -->
+   <div class="container">
+      <!-- Form One -->
+      <div class="formOne">
+       <form action="doSomething.php" class="firstForm">
+            <legend>Jūsų Informacija</legend>
+             <div class="Vardas">
+              <label for="name" id="name">Vardas:</label><br>
+                <input type="text" name="firstname">
+             </div> 
+             <div class="Pavarde">   
+              <label for="lastName" id="lastname">Pavardė:</label><br>
+                <input type="text" name="lastname"><br>
+             </div>
+             <!-- Textarea -->
+            <div class="textarea">
+                <label for="textarea">Jūsų žinutė</label><br>
+                <textarea placeholder="Rasykite viska ka galvojate"></textarea>
+            </div><br>    
+        </form>
+       </div>    
+        
+       <!-- Form Two -->    
+       <div class="formTwo">    
+        <form action="doSomethingElse.php" class="secondForm">
+            <legend>Klausimai</legend>
+              <label for="name" id="name">Kaip sužinojote apie mus?
+              </label>
+            <select name="searchEngines" id="searchEngines">
+                <option value="Google">Google</option>
+                <option>Bing</option>
+                <option>Yahoo</option>
+            </select><br><br>
+            
+            <!-- RadioButtons -->
+             <div class="radioButtons">
+                <label for="apsilankymai" class="apsilankymai">Ar apsilankisyte vėl?</label><br>
+
+                <label>Taip</label>
+                  <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Taip" />
+                   <span class="checkmark"></span>
+
+                <label>Ne</label>
+                  <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Ne" />
+                   <span class="checkmark"></span>
+
+                <label>Galbūt</label>
+                  <input type="radio" name="apsilankymai" id="apsilankymoKlausimas" value="Galbut" /><span class="checkmark"></span><br><br>
+            </div>  
+            
+            <!-- Options -->
+            <div class="options">
+                <label for="options" class="newsletter">Pažymėkitė programavymo/žymėjimo kalbas su kurioms esate susipažinę:</label><br><br>
+                
+                <div class="firstRow">
+                    <input type="checkbox" name="" value="" />C#
+                    <input type="checkbox" name="" value="" />JAVA
+                    <input type="checkbox" name="" value="" />PHP<br>
+                </div>
+                
+                <div class="secondRow">
+                    <input type="checkbox" name="" value="">HTML
+
+                    <input type="checkbox" name="" value="">CSS
+
+                    <input type="checkbox" name="" value="">JavaScript
+                </div>
+                
+                <div class="thirdRow">
+                    <input type="checkbox" name="" value="">Python
+
+                    <input type="checkbox" name="" value="">Ruby
+                </div>       
+            </div><br>
+            
+        </form>
+       </div>
+       <!-- Submit -->
+       <div class="submit">
+          <input class="button" type="button" value="Siūsti">
+       </div>
+   </div>
+    
+</body>
+</html>
