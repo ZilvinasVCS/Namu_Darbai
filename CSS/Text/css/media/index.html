@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .row div:nth-child(1) {
+            width: 50px;
+        }
+        
+        .row div:nth-child(n+2) {
+            width: 100px;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .row div:nth-child(n) {
+                width: 100%;
+            } 
+        }
+        
+        @media screen and (min-width: 501px) {
+            .row div:nth-child(1) {
+            width: 50px;
+        }
+        
+        .row div:nth-child(n+2) {
+            width: 100px;
+        }
+        
+        }
+        
+        
+    </style>    
+</head>
+
+<body>
+    <div class="row">
+        <div class="cell">Nr.</div>
+        <div>Name</div>
+        <div>Surname</div>
+        <div>Age</div>
+        <div>Gender</div>
+    </div>
+    <div class="row">
+        <div class="cell">1</div>
+        <div>Name</div>
+        <div>Surname</div>
+        <div>Age</div>
+        <div>Gender</div>
+    </div>
+    <div class="row">
+        <div class="cell">2</div>
+        <div>Name</div>
+        <div>Surname</div>
+        <div>Age</div>
+        <div>Gender</div>
+    </div>
+</body>
+</html>
