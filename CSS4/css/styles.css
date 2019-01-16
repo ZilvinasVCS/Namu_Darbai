@@ -37,6 +37,13 @@ ul li {
     font-size: 13px;
 }
 
+ul li:hover {
+    color: brown;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    cursor: pointer;
+}
+
 p {
     letter-spacing: 1px;
     font-size: 17px;
