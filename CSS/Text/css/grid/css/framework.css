@@ -1,83 +1,66 @@
-/* Media Queris */
-@media screen and (max-width:600px) {
-    .col-s-1{width:8.33%;}
-    .col-s-2{width:16.66;}
-    .col-s-3{width:25%;}
-    .col-s-4{width:33.33%;}
-    .col-s-5{width:41.66%;}
-    .col-s-6{width:50%;}
-    .col-s-7{width:58.33%;}
-    .col-s-8{width:66.66%;}
-    .col-s-9{width:75%;}
-    .col-s-10{width:83.33%;}
-    .col-s-11{width:91.66%;}
-    .col-s-12{width:100%;}
-    }
-
-@media screen and (min-width:601px) {
-    .col-l-1{width:8.33%;}
-    .col-l-2{width:16.66;}
-    .col-l-3{width:25%;}
-    .col-l-4{width:33.33%;}
-    .col-l-5{width:41.66%;}
-    .col-l-6{width:50%;}
-    .col-l-7{width:58.33%;}
-    .col-l-8{width:66.66%;}
-    .col-l-9{width:75%;}
-    .col-l-10{width:83.33%;}
-    .col-l-11{width:91.66%;}
-    .col-l-12{width:100%;}
+@media screen and (max-width:600px){
+	.cols1{width: 8.33%;}
+	.cols2{width: 16.66%;}
+	.cols3{width: 25%;}
+	.cols4{width: 33.33%;}
+	.cols5{width: 41.66%;}
+	.cols6{width: 50%;}
+	.cols7{width: 58.33%;}
+	.cols8{width: 66.66%;}
+	.cols9{width: 75%;}
+	.cols10{width: 83.33%;}
+	.cols11{width: 91.66%;}
+	.cols12{width: 100%;}
 }
 
-/* Row */
-.row, nav.row ul {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (min-width:601px){
+	.colb1{width: 8.33%;}
+	.colb2{width: 16.66%;}
+	.colb3{width: 25%;}
+	.colb4{width: 33.33%;}
+	.colb5{width: 41.66%;}
+	.colb6{width: 50%;}
+	.colb7{width: 58.33%;}
+	.colb8{width: 66.66%;}
+	.colb9{width: 75%;}
+	.colb10{width: 83.33%;}
+	.colb11{width: 91.66%;}
+	.colb12{width: 100%;}
 }
 
-/* Centering Content */
-.center {
-    justify-content: center;
+.row, nav.row ul{
+	display: flex;
+	flex-wrap: wrap;
 }
 
-/* Navigation */
-nav.row ul li {
-    list-style-type: none;
-    padding: 5px;
+nav.row ul li{
+	list-style-type: none;
+	padding: 5px;
+}
+nav.row ul li:hover{
+	background-color: black;
 }
 
-header {
-    height: 60px;
-    background-color: antiquewhite;
+.center{
+	justify-content: center;
 }
 
-nav {
-    background-color: #000;
-    color: 0;
+.box{
+	border: 1px solid black;
+	min-height: 100px;
 }
 
-nav a {
-    text-decoration: none;
-    color: aliceblue;
+.article{
+	padding: 10px;
+	text-align: justify;
 }
 
-.box {
-    border: 1px solid #000;
-    min-height: 100px;
-    background-color: aqua
+.article figure {
+    float: left;
+    width: 150px;
+    box-shadow: 1px 1px 2px #ccc;
 }
 
-.box1 {
-     border: 1px solid #000;
-    min-height: 100px;
-    background-color: aquamarine;
-}
-
-footer {
-    background-color: dimgrey;
-    height: 100px;
-}
-
-.article {
-    padding: 10px;
+.article img {
+    width: 100%;
 }

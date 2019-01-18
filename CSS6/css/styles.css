@@ -48,7 +48,8 @@ input[type=text]
 
 textarea {
     margin-top: 20px;
-    width: 95%;
+    padding: 20px;
+    width: 92%;
     height: 100px;
 }
 
@@ -122,4 +123,64 @@ input[type="checkbox"] {
         padding: 0 10px;
         margin-bottom: 20px;
     }
+}
+
+.radioButtons {
+  display: block;
+  position: relative;
+  padding-left: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radioButtons input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.radioButtons:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.radioButtons input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radioButtons input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radioButtons .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: blue;
 }
