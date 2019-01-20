@@ -2,13 +2,9 @@ nav {
     background-color: #69A031;
 }
 
-.card {
-    height: 100%;
-}
-
 .card-image {
     margin: 5px 8px;
-    height: 440px;
+    height: 480px;
     overflow: hidden;
 }
 
@@ -18,4 +14,10 @@ nav {
 
 .card-image p {
     font-size: 12px;
+}
+
+@media screen and (max-width:600px) {
+    .card-image {
+        padding: 0 2rem;
+    }
 }
