@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        html,body{
+          margin:0;
+          padding:0;
+          background-color:#FEFEFE;
+        }
+        
+        .iphone {
+            display: block;
+            width: 350px;
+            height: 350px;
+            background-image: url(images/apple-iphone7plus-silver-portrait.png);
+            background-size: cover;
+        }
+        
+        #calculator {
+            position: absolute;
+            top: 96px;
+            left: 26px;
+            width: 260px;
+            height: 500px;
+            background-color: rgba (0, 0, 0, 0.7);
+            text-align: center;
+        }
+        
+        /*
+        
+        #numberInput {
+            height: 80px;
+            width: 280px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+        #firstRow input {
+            border: 1px solid #fff;
+            border-radius: 50px;
+            padding: 20px;
+            margin: 4px;
+            font-size: 20px;
+        }
+        
+        #secondRow input {
+            border: 1px solid #fff;
+            border-radius: 90px;
+            padding: 20px;
+            margin: 4px;
+            font-size: 25px;
+        }
+        
+        #thirdRow input {
+            border: 1px solid #fff;
+            border-radius: 90px;
+            padding: 20px;
+            margin: 4px;
+            font-size: 25px;
+        }
+        
+        #fourthRow input {
+            border: 1px solid #fff;
+            border-radius: 90px;
+            padding: 20px;
+            margin: 4px;
+            font-size: 25px;
+        }
+        
+        #fifthRow input {
+            border: 1px solid #fff;
+            border-radius: 90px;
+            padding: 20px;
+            margin: 4px;
+            font-size: 25px;
+        }
+        
+        .yellowButton {
+            background-color: #f4b942;
+        } */
+        
+        
+        
+    </style>    
+</head>
+
+<body>
+  <div class="iphone">
+  
+  
+   <div id="calculator">
+       <div>
+           <label></label>
+           <input type="text" id="numberInput" />
+       </div>
+       <div id="firstRow">
+           <input type="button" value="AC" />
+           <input type="button" value="+/-" />
+           <input type="button" value="%" />
+           <input class="yellowButton" type="button" value="±" />
+       </div>
+       <div id="secondRow">
+           <input type="button" value="7" />
+           <input type="button" value="8" />
+           <input type="button" value="9" />
+           <input class="yellowButton" type="button" value="x" />
+       </div>
+       <div id="thirdRow">
+           <input type="button" value="4" />
+           <input type="button" value="5" />
+           <input type="button" value="6" />
+           <input class="yellowButton" type="button" value="-" />
+       </div>
+       <div id="fourthRow">
+           <input type="button" value="1" />
+           <input type="button" value="2" />
+           <input type="button" value="3" />
+           <input class="yellowButton" type="button" value="+" />
+       </div>
+       <div id="fifthRow">
+           <input type="button" value="0" />
+           <input type="button" value="." />
+           <input type="button" value="Skaičuoti" class="calculateButton" />
+       </div>
+      </div> 
+   </div>
+    
+</body>
+</html>
+
