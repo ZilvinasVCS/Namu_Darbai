@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js3</title>
+
+  <style>
+    table{
+      text-align: left;
+    }
+    table tr:nth-child(odd){
+      background-color: lightgray;
+      border-collapse: collapse;
+    }
+    th{
+      width: 80px;
+      vertical-align: top;
+    }
+    td{
+      width: 420px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="list">
+    <table>
+      <tr>
+        <th colspan="2" id="name"></th>
+      </tr>
+      <tr>
+        <th>Apirašymas:</th>
+        <td id="description"></td>
+      </tr>
+      <tr>
+        <th>Nuolaida %:</th>
+        <td id="discount"></td>
+      </tr>
+      <tr>
+        <th>Spalva:</th>
+        <td id="info"></td>
+      </tr>
+      <tr>
+        <th>Kaina:</th>
+        <td id="currency"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    var preke = {
+    title: "Nešiojamas kompiuteris",
+    description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
+    discount: 30,
+    isItNew: false,
+    color: ["black", "red", "green", "silver"],
+    price: 699.00,
+    currency: "EUR"
+    };
+      
+    var sum = preke.price + " " + preke.currency;
+    var color1 = "";
+    var i = "0";
+    color1 = "<select>";
+      
+    for (i=0; i < preke.color.length; i++)
+      {
+        color1 += "<option>" + preke.color[i] + "</option>";
+      }
+    color1 += "</select>";
+      
+    document.getElementById("name").innerHTML = preke["title"];
+    document.getElementById("description").innerHTML = preke["description"];
+    
+    document.getElementById("info").innerHTML = color1;
+    document.getElementById("discount").innerHTML = preke["discount"];
+    document.getElementById("currency").innerHTML = sum;
+      
+    if (preke.isItNew == true) {
+      document.getElementById("list").style.color = "green";
+    }
+  </script>
+
+</body>
+</html>
