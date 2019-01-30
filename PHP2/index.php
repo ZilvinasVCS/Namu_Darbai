@@ -8,10 +8,10 @@
     <head></head>
     <body>
         <ul>
-            <li><?php echo $country; ?></li>
-            <li><?php echo $city; ?></li>
-            <li><?php echo $population; ?></li>
+            <li><?php echo $city . '- yra Lietuvos sostine'?></li>   
+            <li><?php echo '"' . $rezultatas . ' - labai sparciai auga' . '"'?></li>
         </ul>
     </body>         
 </html>   
         
+    
