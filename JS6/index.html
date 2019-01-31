@@ -8,7 +8,7 @@
 
 <body>
     <p>Please Enter your age below:</p>
-    <input id="age" value="Your age" />
+    <input id="age" placeholder="Your Age" />
     <button onclick="myFunction()">Let's check</button>
     <p id="answer"></p>
     
@@ -19,7 +19,7 @@
             if (isNaN(age)) {
                 acceptable = "This is not a number";
             } else {
-                acceptable = (age < 18) ? "Sorry, you are too young" : "Please enter";
+                acceptable = (age < 18) ? "Sorry, you are too young" : "You may now enter the website";
             }
             document.getElementById("answer").innerHTML = acceptable;
         }
