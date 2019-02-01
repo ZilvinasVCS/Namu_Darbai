@@ -13,18 +13,14 @@ body {
 
 /* Centering Content */
 .container {
-    max-width: 1000px;
+    display: grid;
+    width: 90%;
+    width: auto;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
     justify-content: center;
-}
-
-div.left_aligned {
-    text-align: left;
-    display: flex;
-    
-}
+}      
 
 .blue_header {
     color: cadetblue;
@@ -87,8 +83,22 @@ h2 {margin: 20px 0 0;
 img.thumbnail {
     width: 200px;
     height: auto;
-}        
+}  
+
+@media screen and (max-width: 600px) {
+    #box{
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        height: 460px;
+    }
+} 
         
+.row {
+    position: absolute;
+    left: 10%;
+}        
+
     </style>    
     <title>Online Store</title>
 </head>
