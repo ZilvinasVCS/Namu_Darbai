@@ -32,6 +32,7 @@ div.left_aligned {
 
 .discription {
     line-height: 20px;
+    margin-bottom: 10px;
 }
 
 .bold_text {
@@ -44,7 +45,7 @@ div.left_aligned {
     margin: 0;
 }
 
-h2 {margin: 0; 
+h2 {margin: 20px 0 0; 
     padding-left: 3px; 
     font-weight: 500; 
     word-spacing: 5px;
@@ -73,13 +74,14 @@ h2 {margin: 0;
         
 #box{
     float: left;
-    height: 500px;
+    height: 540px;
     width: 200px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 2px 2px 2px silver;
     margin: 5px;
     padding: 20px;
+    text-align: left;
 } 
 
 img.thumbnail {
@@ -97,7 +99,7 @@ img.thumbnail {
            <article class="col-l-4 col-s-6 col-xs-12">
                  <div id="showItems">
                   <div id="box">
-                       <img class="thumbnail">
+                       <img class="thumbnail" alt="Laptop Image">
                        <div class="left_aligned">
                            <h3 class="blue_header"></h3>
                            <p class="discription"><span class="bold_text"></span></p>
@@ -131,8 +133,8 @@ img.thumbnail {
                     output += '<img class="thumbnail" src="' + result[i].image + '">';
                     output += '<h3 class="blue_header">' + result[i].item + '</h3>';
                     output += '<span class="bold_text">' + result[i].descriptions + '</td>';
-                    output += '<h3 class="crossed_price">' + result[i].oldprice + '</td>';
-                    output += '<h2>' + result[i].price + '</h2>';
+                    output += '<h2>' + result[i].price + '€' + '</h2>';
+                    output += '<h3 class="crossed_price">' + result[i].oldprice + '€' + '</td><br>';
                     output += '<input class="button" type="button" value="Užsakyti" />';
                     output += '<p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>';
                     output += '</div>';
