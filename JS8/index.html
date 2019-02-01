@@ -4,15 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS8</title>
+    <style>
+        #firstButton {
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: aquamarine;
+        }
+        
+        #secondButton {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+        
+        
+    </style>    
 </head>
 
 <body>
+    <button id="firstButton" onclick="showFullArray()">Lets see Full Array</button>
+    <button id="secondButton" onclick="showSplicedArray()">Lets see the array without the Ona</button>
+    
    
-   <script> 
-       var names = ["Jonas", "Petras", "Martynas", "Ona", "Urte", "Ema"];
-       var nameNotForPrint = names[3];
-       names.splice(3,1);
-       console.log(names);
+   <script>
+       function showFullArray() {
+           var names = ["Jonas", "Petras", "Martynas", "Ona", "Urte", "Ema"];
+           console.log(names);
+       }
+       
+       function showSplicedArray() {
+           var names = ["Jonas", "Petras", "Martynas", "Ona", "Urte", "Ema"];
+           var nameNotForPrint = names[3];
+           names.splice(3,1);
+           console.log(names);
+       }
    </script>
 </body>
 </html>
