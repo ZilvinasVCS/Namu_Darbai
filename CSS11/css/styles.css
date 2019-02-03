@@ -2,6 +2,10 @@ nav {
     background-color: #69A031;
 }
 
+.my-container {
+    padding: 0 30px;
+}
+
 .card-image {
     margin: 5px 8px;
     height: 480px;
