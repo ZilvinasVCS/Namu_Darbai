@@ -28,6 +28,10 @@ ul {
     margin-bottom: 20px;
 }
 
+.active {
+    color: brown;
+}
+
 ul li {
     list-style: none;
     display: inline-block;
