@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #getResources {
+            padding: 20px 40px;
+        }
+        
+    </style>    
+</head>
+
+<body>
+   
+    <div><h1>jQuery Ajax</h1></div>
+    <div>
+        <button id="getResources">Get Resources
+        </button>
+    </div>
+    <div id="showResources"></div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
+    <script>
+    $(document).ready(function() {
+        $("#getResources").click(function() {
+            var showResources = $("#showResources");
+            showResources.text('Please wait...');
+            $.ajax({
+                type: "GET",
+                url: 'https://api.myjson.com/bins/owmcc',
+                success: function(result) {
+                    console.log(result);
+                    var output = '<table><thead><tr><th>Name</th><th>Provideris</th><th>Url</th></tr></thead><tbody>';
+                    for (var i in result) {
+                        output += '<tr>';
+                        output += '<td>' + result[i].name + '</td>';
+                        output += '<td>' + result[i].provider + '</td>';
+                        output += '<td>' + result[i].url + '</td>';
+                        output += '<tr>';
+                    }
+                    output += '</tbody></table>';
+                    showResources.html(output);
+                    $('table').addClass('table');
+                }
+                
+            });
+        });
+    });
+    
+    
+    </script>
+</body>
+</html>

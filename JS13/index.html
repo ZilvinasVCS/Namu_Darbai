@@ -8,15 +8,48 @@
     body {
         padding: 0;
         margin: 0;
-    }    
+    } 
 
     .container {
-        max-width: 756px;
+        max-width: 100%;
+        display: flex;
+        height: 100vh;
         justify-content: center;
         margin: 0 auto;
         text-align: center; 
         background-color: #cdcdcd;
     }
+        
+    @media screen and (min-width:601px){
+        .colb1{width: 8.33%;}
+        .colb2{width: 16.66%;}
+        .colb3{width: 25%;}
+        .colb4{width: 33.33%;}
+        .colb5{width: 41.66%;}
+        .colb6{width: 50%;}
+        .colb7{width: 58.33%;}
+        .colb8{width: 66.66%;}
+        .colb9{width: 75%;}
+        .colb10{width: 83.33%;}
+        .colb11{width: 91.66%;}
+        .colb12{width: 100%;}
+    } 
+        
+     @media screen and (max-width:600px){
+	.cols1{width: 8.33%;}
+	.cols2{width: 16.66%;}
+	.cols3{width: 25%;}
+	.cols4{width: 33.33%;}
+	.cols5{width: 41.66%;}
+	.cols6{width: 50%;}
+	.cols7{width: 58.33%;}
+	.cols8{width: 66.66%;}
+	.cols9{width: 75%;}
+	.cols10{width: 83.33%;}
+	.cols11{width: 91.66%;}
+	.cols12{width: 100%;}
+    }
+    
         
     .container h1 {
         margin: 0;
@@ -27,8 +60,8 @@
         
     #images img {
         width: 200px;
-        height: 140px;
-        padding: 20px;
+        height: auto;
+        padding: 10px;
         transition: transform 0.2s;
     } 
     
@@ -42,7 +75,13 @@
 
 <body>
    <div class="container">
-       <a onclick="getImages()" id="button"><div id="images"></div></a>      
+       <div class="row">
+          <div class="colb3 cols12">
+           <a onclick="getImages()" id="button">
+               <div id="images"></div>
+           </a> 
+          </div>  
+       </div>     
    </div>  
    
            

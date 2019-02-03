@@ -3,7 +3,91 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <style>
+        
+body {
+    font-family: Helvetica Neue,sans-serif;
+    background-color: #ccc;
+    color: dimgray;
+}
+
+/* Centering Content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+div.left_aligned {
+    text-align: left;
+    display: flex;
+    
+}
+
+.blue_header {
+    color: cadetblue;
+}
+
+.discription {
+    line-height: 20px;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+.crossed_price {
+    text-decoration: line-through;
+    font-weight: 200;
+    margin: 0;
+}
+
+h2 {margin: 0; 
+    padding-left: 3px; 
+    font-weight: 500; 
+    word-spacing: 5px;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    background-color: #A0DC42;
+    color: antiquewhite;
+    font-size: 18px;
+    border: 1px solid #A0DC42;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #A0DC42;
+}
+
+.button:hover {
+    background-color: #85ba32;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.text_light {
+    color: darkgray;
+}
+        
+#box{
+    float: left;
+    height: 500px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px silver;
+    margin: 5px;
+    padding: 20px;
+} 
+
+img.thumbnail {
+    width: 200px;
+    height: auto;
+}        
+        
+    </style>    
     <title>Online Store</title>
 </head>
 
@@ -11,50 +95,53 @@
     <div class="container">
         <section class="row">
            <article class="col-l-4 col-s-6 col-xs-12">
-               <div class="article">
-                   <img class="thumbnail" src="img/111.jpg">
-                   <div class="left_aligned">
-                       <h3 class="blue_header">Nešiojamas kompiuteris ASUS K540NA</h3>
-                       <p class="discription">Atmintinė (RAM) (GB): 4,
-                       įstrižzinė: <span class="bold_text">15.6" (39,6c...)</span></p>
-                       <h2>259,00 €</h2>
-                       <h3 class="crossed_price">359,00 €</h3>
-                       <input class="button" type="button" value="Užsakyti" />
-                       <p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>
-                   </div>
-               </div>
-           </article>
-
-           <article class="col-l-4 col-s-6 col-xs-12">
-               <div class="article">
-                   <img class="thumbnail" src="img/333.jpg">
-                   <div class="left_aligned">
-                       <h3 class="blue_header">Nešiojamas kompiuteris LENOVO V110-15IAP</h3>
-                       <p class="discription">Atmintinė (RAM) (GB): 4,
-                       įstrižzinė: <span class="bold_text">15.6" (&sim;39,6c...)</span></p>
-                       <h2>199,99 €</h2>
-                       <h3 class="crossed_price">349,99 €</h3>
-                       <input class="button" type="button" value="Užsakyti" />
-                       <p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>
-                   </div>
-               </div>
-           </article>
-
-           <article class="col-l-4 col-s-6 col-xs-12">
-               <div class="article">
-                   <img class="thumbnail" src="img/222.jpg">
-                   <div class="left_aligned">
-                       <h3 class="blue_header">Nešiojamas kompiuteris DELL Inspiron 15 3573</h3>
-                       <p class="discription">Atmintinė (RAM) (GB): 4,
-                       įstrižzinė: <span class="bold_text">15.6" (39,6c...)</span></p>
-                       <h2>299,00 €</h2>
-                       <h3 class="crossed_price">399,00 €</h3>
-                       <input class="button" type="button" value="Užsakyti" />
-                       <p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>
-                   </div>
-               </div>
-           </article>               
+                 <div id="showItems">
+                  <div id="box">
+                       <img class="thumbnail">
+                       <div class="left_aligned">
+                           <h3 class="blue_header"></h3>
+                           <p class="discription"><span class="bold_text"></span></p>
+                           <h2></h2>
+                           <h3 class="crossed_price"></h3>
+                           <p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>
+                       </div>
+                   </div>  
+                </div>
+           </article>      
         </section>
-    </div>        
+    </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script>
+    $(document).ready(function() {
+        var showItems = $("#showItems");
+        $.ajax({
+            type: "GET",
+            url: 'http://kitchenoffice.eu/service/computers.php',
+            dataType: 'json',
+            success: function(result) {
+                console.log(result);
+                var output = '<div class="left-aligned">';
+                for (var i in result) {
+                    output += '<div id="box">';
+                    output += '<img class="thumbnail" src="' + result[i].image + '">';
+                    output += '<h3 class="blue_header">' + result[i].item + '</h3>';
+                    output += '<span class="bold_text">' + result[i].descriptions + '</td>';
+                    output += '<h3 class="crossed_price">' + result[i].oldprice + '</td>';
+                    output += '<h2>' + result[i].price + '</h2>';
+                    output += '<input class="button" type="button" value="Užsakyti" />';
+                    output += '<p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>';
+                    output += '</div>';
+                }
+                output += '</div>';
+                showItems.html(output);
+            }
+        });
+    });
+    </script>                              
 </body>
 </html>

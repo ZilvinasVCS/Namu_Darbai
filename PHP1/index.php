@@ -13,9 +13,6 @@
             <li><?php echo $population; ?></li>
         </ul>
     </body>         
-</html>   
-        
-        
-   "Vilnius - Lietuvos sostinė"     
+</html>      
         
     

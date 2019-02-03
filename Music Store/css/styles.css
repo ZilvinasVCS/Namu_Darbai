@@ -1,0 +1,314 @@
+/* Some Maintanance Goes here */
+html{overflow-x:hidden;}
+
+/* 1. Cover & Navigation */
+.cover {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 13, 39, 0.93)), url(../images/background-min.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-feature {
+    color: aliceblue;
+    text-align: center;
+}
+
+.cover-feature::after {
+    content: "";
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    height: 1px;
+}
+
+nav.navbar{
+    background:trasparent!important;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#hamburger {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  background-clip: content-box;
+  background-color: white;
+  box-sizing: content-box;
+  color: transparent;
+  height: 2px;
+  padding: 26px 15px;
+  position: relative;
+  width: 24px;
+}
+
+#hamburger, #hamburger::before, #hamburger::after {
+  transition: 0.2s all linear;
+}
+#hamburger::before, #hamburger::after {
+  background-color: white;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 15px;
+  position: absolute;
+  width: 24px;
+}
+#hamburger::before {
+  top: 18px;
+}
+#hamburger::after {
+  bottom: 18px;
+}
+
+#hamburger.open {
+  background-color: transparent;
+}
+#hamburger.open::before, #hamburger.open::after {
+  width: 33px;
+}
+#hamburger.open::before {
+  transform: rotate(45deg) translate(2px, 9px);
+}
+#hamburger.open::after {
+  transform: rotate(-45deg) translate(2px, -9px);
+}
+
+a.nav-link {
+    padding: 20px;
+    transition: color 0.3s;
+}
+
+a.nav-link:hover {
+    color: antiquewhite;
+    transition: color 0.6s;
+}
+
+.btn-info {
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    height: 50px;
+    margin-top: 8px;
+    font-size: 25px;
+}
+
+.btn-info:hover {
+    background-color: #333;
+    transition: all 0.3s;
+}
+
+/* 2. Recent Releases Section */
+.recent-releases {
+    padding: 4rem 0;
+    background-color: #eff0f2;
+}
+
+.first-header::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    background-color: #333;
+    height: 1px;
+    margin-top: 2rem;
+}
+
+.recent-releases h1,
+.carousel h1,
+#categories h1 {
+    margin-bottom: 3rem;
+}
+
+.card-releases {
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #000;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.6s;
+}
+
+.btn-primary:hover {
+    background-color: #505151;
+    transition: all 0.6s;
+}
+
+/* 3. Inner */
+#inner-section {
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 23, 42, 0.98)), url(../images/music-sheet-1326999.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-cover-feature {
+    color: aliceblue;
+    text-align: center;
+}
+
+.parallax-cover-feature::after {
+    content: "";
+    display: block;
+    width: 60%;
+    margin: 2rem auto;
+    background-color: aliceblue;
+    height: 1px;
+}
+
+/* 4. Categories */
+#categories {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+h2.categories {margin-bottom:1rem;}
+
+.card-category {
+    margin-top: 2rem 0;
+    margin: 2rem 8px;
+    border-radius: 8px;
+    transition: all 0.7s;
+    border:1px solid #e8e8e8;
+}
+
+.card-category:hover {
+    transform: scale(0.98);
+    transition: all 0.7s;
+}
+
+a#filter {
+    text-decoration: none;
+    color: #000;
+    padding: 0 20px;
+}
+
+a#filter:hover {
+    color: #333;
+    transition: color 0.4s;
+}
+
+/* 5. Newsletter */
+#newsletter {
+    background-color: #e8e8e8;
+    padding: 2rem 0;
+}
+
+input#email {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* 6. Footer */
+#footer {
+    background-color: #fff;
+    padding: 3rem 1rem;
+}
+
+/* 7. Contact Form */
+#form {
+    background-color: #686868;
+    padding: 6rem 4rem;
+    color: #fff;
+}
+
+.form-header::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    background-color: #fff;
+    height: 1px;
+    margin-top: 2rem;
+}
+
+.contact-form {padding-top:2rem;}
+
+#form input {
+    background-color: #686868;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: none; 
+}
+
+/* 8. Catalog Cards */
+#catalog {
+    background-color: #e0e0e0;
+    padding: 6rem 2rem;
+    color: #fff;
+}
+
+.catalog-header::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    background-color: #fff;
+    height: 1px;
+    margin-top: 2rem;
+}
+
+.card-columns {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.text-black{color:#000;}
+
+/* 9. Item Section */
+#item {
+    background-color: #c4c4c4;
+    padding: 7rem 0 3rem;
+    color: #fff;
+}
+
+.item-container{padding:2rem 2rem 2rem;}
+.carousel-container{padding:2rem 0 0;}
+
+.item-header::after {
+    content: "";
+    display: block;
+    margin: 1rem auto 2rem;;
+    width: 60%;
+    background-color: #fff;
+    height: 1px;
+}
+
+.item-title{font-size:1.2rem;}
+.item-price{font-size:1.2rem;}
+.item-description{font-size:.7rem;}
+.item-quantity{font-size: 0.7rem;}
+.addToCart{margin-top: 1rem;}
+
+
+

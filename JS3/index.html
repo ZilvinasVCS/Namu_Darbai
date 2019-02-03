@@ -55,7 +55,7 @@
     title: "Nešiojamas kompiuteris",
     description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
     discount: 30,
-    isItNew: false,
+    isItNew: true,
     color: ["black", "red", "green", "silver"],
     price: 699.00,
     currency: "EUR"
@@ -64,8 +64,8 @@
     var sum = preke.price + " " + preke.currency;
     var color1 = "";
     var i = "0";
-    color1 = "<select>";
       
+    color1 = "<select>";    
     for (i=0; i < preke.color.length; i++)
       {
         color1 += "<option>" + preke.color[i] + "</option>";

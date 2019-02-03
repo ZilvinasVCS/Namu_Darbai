@@ -2,15 +2,12 @@
     $cities = array("Berlynas", "Roma", "Londonas");
     
     $cities[] = "Tokijas";
-
     $cities2 = [
        'Tokijas' => '13.6',
        'Vasingtonas' => '0.6',
        'Maskva' => '11.5'
     ];
-
     $cities2[] = "Maskva";
-
 ?>
 
 

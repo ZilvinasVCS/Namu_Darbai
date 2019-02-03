@@ -1,3 +1,4 @@
+
 function one() {document.calculator.display.value += '1';}
 function two() {document.calculator.display.value += '2';}
 function three() {calculator.display.value += '3'};
@@ -13,5 +14,4 @@ function plius() {calculator.display.value += '+'};
 function minus() {calculator.display.value += '-'};
 function divide() {calculator.display.value += '/'};
 function multiply() {calculator.display.value += '*'};
-function clear() {calculator.display.value += ''};
 function skaicuok() {calculator.display.value = eval(calculator.display.value)};

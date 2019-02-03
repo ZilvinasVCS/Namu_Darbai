@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+  <button onclick="add();" id="button">Press Button</button>
+  <div id="info"></div>
+  
+   <script>
+       var count = 0;
+       var phones = ["nokia", "lg", "samsung", "apple", "sony"];
+       var color = 'style="color:red;"';
+       
+
+        function add() 
+            {   
+                    
+            var i = 1;
+            var text = "";
+                
+            if (count < 6) {    
+            phones.push(count); }    
+            
+            text = "<ul>";
+            for (i=0; i < phones.length; i++) {
+                if (count > 3) {
+                    text += "<li " + color + ">" + phones[i] + "</li>";
+                }
+                else {
+                    text += "<li>" + phones[i] + "</li>";
+                }
+                
+            }
+            text += "</ul>";
+            count++;
+            document.getElementById("info").innerHTML = text; 
+        }
+   </script>       
+    
+</body>
+</html>

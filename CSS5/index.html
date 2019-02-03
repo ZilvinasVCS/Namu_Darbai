@@ -29,7 +29,7 @@
             text-align: center;
         }
         
-        #numberInput {
+        #display {
             height: 40px;
             width: 116px;
             margin-top: 0;
@@ -37,6 +37,8 @@
             border: none;
             margin-left: 1px;
             border-radius: 5px;
+            color: aliceblue;
+            font-size: 20px;
         }
         
         #firstRow input {
@@ -81,60 +83,62 @@
             margin: 5px -1px;
         }
         
-        input.yellowButton {
+        input.yellowButton,
+        .clear {
             background-color: #f4b942;
         }
         
-        input.yellowButton.submit {
+        input.yellowButton.submit,
+        .clear {
             border-radius: 20px!important;
         }
         
-        
-        
+        .clear {
+            width: 90px;
+            background-color: #fff;     
+        }
+           
     </style>    
 </head>
 
 <body>
+ 
   <div class="iphone">
-  
-  
-   <div id="calculator">
-       <div>
-           <label></label>
-           <input type="text" id="numberInput" value="0"/>
-       </div>
-       <div id="firstRow">
-           <input type="button" value="AC" />
-           <input type="button" value="+|-" />
-           <input class="special-charachter" type="button" value="%" />
-           <input class="yellowButton special-charachter" type="button" value="±" />
-       </div>
-       <div id="secondRow">
-           <input type="button" value="7" />
-           <input type="button" value="8" />
-           <input type="button" value="9" />
-           <input class="yellowButton" type="button" value="x" />
-       </div>
-       <div id="thirdRow">
-           <input type="button" value="4" />
-           <input type="button" value="5" />
-           <input type="button" value="6" />
-           <input class="yellowButton" type="button" value="-" />
-       </div>
-       <div id="fourthRow">
-           <input type="button" value="1" />
-           <input type="button" value="2" />
-           <input type="button" value="3" />
-           <input class="yellowButton" type="button" value="+" />
-       </div>
-       <div id="fifthRow">
-           <input type="button" value="0" />
-           <input class="special-charachter" type="button" value="." />
-           <input type="button" value="Skaičuoti" class="yellowButton submit" />
-       </div>
-      </div> 
+   <form name="calculator" id="calculator">
+       <input type="text" id="display" name="display" placeholder="0"/>
+       <div id="buttons">
+           <div id="firstRow">
+               <input type="button" class="clear submit" id="C" name="clear" value="clear" onclick="clear()">
+               <input class="yellowButton special-charachter operator" type="button" value="/" name="divide" onclick="divide()"/>
+           </div>
+           <div id="secondRow">
+               <input type="button" value="7" name="seven" onclick="seven()"/>
+               <input type="button" value="8" name="eight" onclick="eight()"/>
+               <input type="button" value="9" name="nine" onclick="nine()"/>
+               <input class="yellowButton operator" type="button" value="*" name="multiply" onclick="multiply()"/>
+           </div>
+           <div id="thirdRow">
+               <input type="button" value="4" name="four" onclick="four()"/>
+               <input type="button" value="5" name="five" onclick="five()"/>
+               <input type="button" value="6" name="six" onclick="six()"/>
+               <input class="yellowButton operator" type="button" value="-" name="minus" onclick="minus()"/>
+           </div>
+           <div id="fourthRow">
+               <input type="button" value="1" name="one" onclick="one()"/>
+               <input type="button" value="2" name="two" onclick="two()"/>
+               <input type="button" value="3" name="three" onclick="three()"/>
+               <input class="yellowButton operator" type="button" value="+" id="plius" name="plius" onclick="plius()"/>
+           </div>
+           <div id="fifthRow">
+               <input type="button" value="0" name="zero" onclick="zero()"/>
+               <input class="special-charachter" type="button" value="." id="dot" onclick="dot()"/>
+               <input type="button" value="Skaičuoti" name="skaicuoti" class="yellowButton submit" onclick="skaicuoti()"/>
+           </div>
+      </div>
+      </form> 
    </div>
-    
+   <script src="js/script.js" type="text/javascript"></script>
+   
 </body>
 </html>
 

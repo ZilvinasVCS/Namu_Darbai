@@ -19,28 +19,26 @@
 </head>
 	
 <body>
-	
-		<div class="container">
-			<header></header>
-			<main class="hide"></main>
-		</div>
-	
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
-		<script>
-			$(document).ready(function(){
-              $("header").click(function(){
-                $("main").toggle(
-                    function(){
-                        $('main').animate({
-                            height: "600px", 
-                            backgroundColor:'#000000',
-                            opacity:.8
-                        }, 500);
-                    });
-              });
-            });
+    <div class="container">
+        <header></header>
+        <main class="hide"></main>
+    </div>
 
-		</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $("header").click(function(){
+            $("main").toggle(
+                function(){
+                    $('main').animate({
+                        height: "600px", 
+                        backgroundColor:'#000000',
+                        opacity:.8
+                    }, 500);
+                });
+          });
+        });
+    </script>
 </body>
 </html>
