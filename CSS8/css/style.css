@@ -34,9 +34,10 @@ body {
 }
 
 .container {
-    width: 756px;
+    max-width: 756px;
     justify-content: center;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Row */
@@ -61,8 +62,7 @@ body {
 }
 
 .row input {
-    width: 83%;
-    margin-left: 25%;
+    width: 69%;
     height: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -73,7 +73,7 @@ body {
 
 .button {
     height: 26px;
-    width: 570px;
+    width: 780%;
     padding: 7px 0 0;
     text-align: center;
     border: 1px solid transparent;
@@ -81,6 +81,30 @@ body {
     box-shadow: 1px 1px 1px #000;
     background-color: lightgray;
 }
+
+@media screen and (max-width:798px) { 
+    .button {
+        width: 700%;
+    }
+}
+
+@media screen and (max-width:727px) { 
+    .button {
+        width: 500%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .row input {
+    width: 100%;
+    margin-left: 0;
+    }
+    
+    .button {
+        width: 500%;
+    }
+}
+
 
 table {
     width: 698px;
