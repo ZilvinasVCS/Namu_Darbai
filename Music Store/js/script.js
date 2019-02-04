@@ -19,7 +19,7 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $(".navbar-dark").css('background-color', 'rgba(0, 0, 0, 0.8)');
+          $(".navbar-dark").css('background-color', 'rgba(0, 0, 0, 0.4)');
        } else {
           $('.navbar-dark').css('background-color', 'transparent');
        }
