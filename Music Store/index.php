@@ -1,75 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
-    <!-- Social Meta Open Graph tags-->  
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="">
-    <meta property="og:image" content="">
-    <meta name="keywords" content=""><!--Add keywords later-->
-    <meta name="description" content=""><!--Add Website meta content--> 
-
-    <link rel="alternate" hreflang="en-US" href="#" />
-    <link rel="icon" type="image/x-icon" href="#"><!--Add link to Icon CDN-->
-
-    <title>Sheet Music Store</title>
-    
-    <!--Stylesheets-->
-    <!-- Ion Icons CSS -->
-    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- My Custom Styles-->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+<?php include('includes/header.php'); ?>
+<title>Sheet Music Store</title>
 </head>
 
 <body>
 
     <!--Cover Section-->
     <div class="cover" data-type="background" data-speed="2">
-      <div class="navigation">
-       <!--Navigation Bar-->
-       <nav class="navbar navbar-dark fixed-top">
-        <a class="navbar-brand" href="index.html">My Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="true" aria-label="Toggle navigation">
-            <div id="hamburger"></div>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"  href="full-catalog.html">Full catalog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"  href="#">My account</a>
-                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#">Log in/Sign up</a>
-                 </li>
-                 <li class="nav-item">
-                    <a href="#" class="btn btn-info">
-                    <i class="icon ion-md-cart"></i></a>
-                 </li>
-                
-             </ul>
-        </div>
-     </nav>
-     <!--End Navigation Bar-->
+    <?php include('includes/navigation.php'); ?>
      
      <!--Cover Text-->
      <div class="cover-text start">
@@ -96,7 +33,7 @@
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
                 <p class="card-text">19.99 $</p>
-                <a href="item.html" class="btn btn-primary">Quick View</a>
+                <a href="item.php" class="btn btn-primary">Quick View</a>
               </div>
             </div>
           </div>
@@ -106,7 +43,7 @@
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
                 <p class="card-text">19.99 $</p>
-                <a href="item.html" class="btn btn-primary">Quick View</a>
+                <a href="item.php" class="btn btn-primary">Quick View</a>
               </div>
             </div>
           </div>
@@ -116,7 +53,7 @@
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
                 <p class="card-text">19.99 $</p>
-                <a href="item.html" class="btn btn-primary">Quick View</a>
+                <a href="item.php" class="btn btn-primary">Quick View</a>
               </div>
             </div>
           </div>
@@ -125,7 +62,7 @@
               <div class="card-body text-center">
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
-                <p class="card-text">19.99 $</p>
+                <p class="card-php">19.99 $</p>
                 <a href="item.html" class="btn btn-primary">Quick View</a>
               </div>
             </div>
@@ -138,7 +75,7 @@
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
                 <p class="card-text">19.99 $</p>
-                <a href="item.html" class="btn btn-primary">Quick View</a>
+                <a href="item.php" class="btn btn-primary">Quick View</a>
               </div>
             </div>
           </div>
@@ -148,7 +85,7 @@
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
                 <p class="card-text">19.99 $</p>
-                <a href="item.html" class="btn btn-primary">Quick View</a>
+                <a href="item.php" class="btn btn-primary">Quick View</a>
               </div>
             </div>
           </div>
@@ -158,7 +95,7 @@
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
                 <p class="card-text">19.99 $</p>
-                <a href="item.html" class="btn btn-primary">Quick View</a>
+                <a href="item.php" class="btn btn-primary">Quick View</a>
               </div>
             </div>
           </div>
@@ -168,7 +105,7 @@
                <img src="images/sample-min.jpeg" class="card-img-top" alt="Sample Sheet Music">
                 <h5 class="card-title" id="sheetMusicTitle">Sheet Music Title</h5>
                 <p class="card-text">19.99 $</p>
-                <a href="item.html" class="btn btn-primary">Quick View</a>
+                <a href="item.php" class="btn btn-primary">Quick View</a>
               </div>
             </div>
           </div>
@@ -274,65 +211,5 @@
      </div>   
     </section>
     <!--End of Categories--> 
-    
-    <!--Newsletter-->
-    <section id="newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="thumbnail center well well-small text-center">
-                        <h2 class="first-header text-center">Newsletter</h2>
-
-                        <p>Subscribe to our weekly Newsletter and stay tuned.</p>
-
-                        <form action="" method="post">
-                            <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
-                                <input type="email" id="email" name="email" placeholder="your@email.com">
-                            </div>
-                            <br />
-                            <input type="submit" value="Subscribe Now!" class="btn btn-primary" />
-                      </form>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of Newsletter-->       
-          
-    <!--Footer Section-->
-    <section id="footer">   
-      <footer class="pt-4">
-        <div class="row">
-          <div class="col-4 col-md">
-            <img class="mb-2" src="" alt="" width="24" height="24">
-            <small class="d-block mb-3 text-muted text-center">My Music Store &copy; 2017-2019</small><!--Add PHP later to fetch year dynamically-->
-          </div>
-          <div class="col-4 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="full-catalog.html">Full Catalog</a></li>
-              <li><a class="text-muted" href="#">Who we are?</a></li>
-              <li><a class="text-muted" href="contact.html">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="col-4 col-md">
-            <h5>Connect with us</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Facebook</a></li>
-              <li><a class="text-muted" href="#">Twitter</a></li>
-              <li><a class="text-muted" href="#">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </section>
-    <!--End of Footer--> 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js"></script><!--Bootstrap Core Javascript-->
-    <script src="js/script.js"></script><!--Custom Script-->
-</body>
-</html>
+    <?php include('includes/newsletter.php'); ?>     
+    <?php include('includes/footer.php'); ?>    

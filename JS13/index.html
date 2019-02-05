@@ -1,100 +1,42 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS13</title>
-    <style>
-    body {
-        padding: 0;
-        margin: 0;
-    } 
-
-    .container {
-        max-width: 100%;
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        margin: 0 auto;
-        text-align: center; 
-        background-color: #cdcdcd;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 13 namu darbas</title>
+  <style>
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 700px;
     }
-        
-    @media screen and (min-width:601px){
-        .colb1{width: 8.33%;}
-        .colb2{width: 16.66%;}
-        .colb3{width: 25%;}
-        .colb4{width: 33.33%;}
-        .colb5{width: 41.66%;}
-        .colb6{width: 50%;}
-        .colb7{width: 58.33%;}
-        .colb8{width: 66.66%;}
-        .colb9{width: 75%;}
-        .colb10{width: 83.33%;}
-        .colb11{width: 91.66%;}
-        .colb12{width: 100%;}
-    } 
-        
-     @media screen and (max-width:600px){
-	.cols1{width: 8.33%;}
-	.cols2{width: 16.66%;}
-	.cols3{width: 25%;}
-	.cols4{width: 33.33%;}
-	.cols5{width: 41.66%;}
-	.cols6{width: 50%;}
-	.cols7{width: 58.33%;}
-	.cols8{width: 66.66%;}
-	.cols9{width: 75%;}
-	.cols10{width: 83.33%;}
-	.cols11{width: 91.66%;}
-	.cols12{width: 100%;}
+    img{
+      width: 200px;
+      margin: 5px;
     }
-    
-        
-    .container h1 {
-        margin: 0;
-        padding: 3rem;
-        font-family: fantasy;
-        font-size: 50px;
-    }    
-        
-    #images img {
-        width: 200px;
-        height: auto;
-        padding: 10px;
-        transition: transform 0.2s;
-    } 
-    
-    #images img:hover {
-        transform: scale(1.1);
-        transition: transform 0.2s;
-    } 
-                
-    </style>    
+  </style>
 </head>
 
 <body>
-   <div class="container">
-       <div class="row">
-          <div class="colb3 cols12">
-           <a onclick="getImages()" id="button">
-               <div id="images"></div>
-           </a> 
-          </div>  
-       </div>     
-   </div>  
-   
-           
-   <script>
-       var images = ["https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/bycycle.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/chess.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/jump.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/kiting.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/lion.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/onwater.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/para.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/photographer.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/pieva.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/supynes.jpg"];
-       
-       var gallery = '<h1>' + "Galerija" + '</h1>';   
-       for (i=0; i < images.length; i++) {
-           gallery += '<img src="' + images[i] + '">'
-       }
-       document.getElementById('images').innerHTML = gallery;
-    
-   </script>      
-    
+
+  <div class="container">
+    <div id="gallery"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var images = ["https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/bycycle.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/chess.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/jump.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/kiting.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/lion.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/onwater.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/para.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/photographer.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/pieva.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/supynes.jpg"];
+
+    var list = '<h1>' + 'Galerija' + '</h1>'
+
+    for (i=0; i < images.length; i++){
+      var result = images[i].match(/offers[/](.*).jpg/)[1];
+      var upResult = result.charAt(0).toUpperCase() + result.slice(1)
+      list += '<img src="' + images[i] + '" alt="' + upResult + '">'
+      console.log(upResult);
+    }
+
+    document.getElementById('gallery').innerHTML = list;
+  </script>
 </body>
 </html>
