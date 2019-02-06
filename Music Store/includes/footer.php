@@ -3,23 +3,22 @@
   <footer class="pt-4">
     <div class="row">
       <div class="col-4 col-md">
-        <img class="mb-2" src="" alt="" width="24" height="24">
-        <small class="d-block mb-3 text-muted text-center">My Music Store &copy; 2017-2019</small><!--Add PHP later to fetch year dynamically-->
+        <small class="d-block mb-3 text-muted text-center">My Music Store &copy;<?php echo date('Y');?></small>
       </div>
       <div class="col-4 col-md">
         <h5>Resources</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-muted" href="full-catalog.html">Full Catalog</a></li>
           <li><a class="text-muted" href="#">Who we are?</a></li>
-          <li><a class="text-muted" href="contact.html">Contact us</a></li>
+          <li><a class="text-muted" href="contact.php">Contact us</a></li>
         </ul>
       </div>
       <div class="col-4 col-md">
         <h5>Connect with us</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Facebook</a></li>
-          <li><a class="text-muted" href="#">Twitter</a></li>
-          <li><a class="text-muted" href="#">LinkedIn</a></li>
+        <ul class="list-inline text-small">
+          <li class="list-inline-item"><a class="text-muted" href="#"><i class="icon ion-logo-facebook"></i></a></li>
+          <li class="list-inline-item"><a class="text-muted" href="#"><i class="icon ion-logo-linkedin"></i></a></li>
+          <li class="list-inline-item"><a class="text-muted" href="#"><i class="icon ion-logo-twitter"></i></a></li>
         </ul>
       </div>
     </div>

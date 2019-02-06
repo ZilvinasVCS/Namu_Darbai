@@ -19,7 +19,6 @@
 
 <link rel="alternate" hreflang="en-US" href="#" />
 <link rel="icon" type="image/x-icon" href="#"><!--Add link to Icon CDN-->
-
 <!--Stylesheets-->
 <!-- Ion Icons CSS -->
 <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">

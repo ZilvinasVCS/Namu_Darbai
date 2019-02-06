@@ -235,6 +235,21 @@ input#email {
     padding: 3rem 1rem;
 }
 
+.ion-logo-linkedin {
+    color: #0077B5;
+    font-size: 30px;
+}
+
+.ion-logo-facebook {
+    color: #3b5998;
+    font-size: 30px;
+}
+
+.ion-logo-twitter {
+    color: #38A1F3;
+    font-size: 30px;
+}
+
 /* 7. Contact Form */
 #form {
     background-color: #686868;
@@ -255,14 +270,27 @@ input#email {
 .contact-form {padding-top:2rem;}
 
 #form input{
-    background-color: #fff;
+    background-color: #333;
     border: none;
-    border-bottom: 1px solid #fff;
     border-radius: none; 
 }
 
-.text-danger {
-    display: none;
+textarea.form-control {
+    background-color: #333;
+    border: none;
+}
+
+.alert {
+    transition: all 0.4s;
+}
+
+.alert-danger {
+    margin-top: 20px;
+    transition: all 0.4s;
+}
+
+.alert-success {
+    margin-top: 20px;
 }
 
 /* 8. Catalog Cards */
